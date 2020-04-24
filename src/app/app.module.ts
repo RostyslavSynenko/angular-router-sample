@@ -6,7 +6,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HeroesModule } from './heroes/heroes.module';
 import { AppComponent } from './app.component';
-import { CrisisListComponent } from './crisis-list/crisis-list.component';
+import { CrisisCenterModule } from './crisis-center/crisis-center.module';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 @NgModule({
@@ -15,13 +15,10 @@ import { PageNotFoundComponent } from './page-not-found/page-not-found.component
     BrowserAnimationsModule,
     FormsModule,
     HeroesModule,
+    CrisisCenterModule,
     AppRoutingModule
   ],
-  declarations: [
-    AppComponent,
-    CrisisListComponent,
-    PageNotFoundComponent
-  ],
+  declarations: [AppComponent, PageNotFoundComponent],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
