@@ -30,11 +30,13 @@ export class CrisisService {
 
   addCrisis(name: string) {
     name = name.trim();
+
     if (name) {
       let crisis = {
         id: CrisisService.nextCrisisId++,
         name
       };
+
       CRISES.push(crisis);
       this.crises$.next(CRISES);
     }
