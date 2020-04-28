@@ -4,10 +4,7 @@
   <button *ngIf="!authService.isLoggedIn" (click)="login()">
     Login
   </button>
-  <button
-    *ngIf="!authService.isLoggedIn"
-    (click)="logout()"
-  >
+  <button *ngIf="authService.isLoggedIn" (click)="logout()">
     Logout
   </button>
 </p>
